@@ -1,6 +1,6 @@
 html,body{
- 	height: 100%;
-   width: 1366px;;
+   width: 1366px;
+   min-height: 768px;
 	position: relative;
 	margin: 0 auto;
 
@@ -9,12 +9,6 @@ html,body{
    color: #886547;
 	font-size: 20px;
 	font-weight: 700;
-}
-.bg{
-   position: absolute;
-   background: url('../images/bg.jpg');
-   width: 1366px;
-   height: 768px;
 }
 /***************************************************
 NAVIGATION
@@ -46,7 +40,7 @@ NAVIGATION
       .navigation-item._contacts{
          top: 240px;
          right: 120px;
-         padding: 5px 20px;
+         padding: 5px 22px;
       }
       .navigation-item._dreams{
          top: 300px;
@@ -56,25 +50,193 @@ NAVIGATION
  /**************************************************
  Main content
  **************************************************/
-.kernel{
+.content{
    position: relative;
    width: 723px;
    height: 735px;
-   margin: 0 auto;
-   background: url(../images/objects.png) no-repeat;
+   margin: 30px auto 0px;
 }
-   .kernel-content{
+   .content-item{
       position: absolute;
+      z-index: 2;
       top: 175px;
       left: 165px;
       width: 386px;
       height: 386px;
       background: #fff;
    }
-      .kernel-content__logo{
+      .content-item__logo{
          width: 200px;
          margin: 55px auto;
       }
+/***************************************************
+Objects
+***************************************************/
+   .object{
+      position: absolute;
+   }
+   .object.swan{
+      top: 25px;
+      right: 355px;
+   }
+   .object.swan:hover{
+      background: url('../images/swan_active.png');
+   }
+   .object.fern{
+      top: 182px;
+      right: 336px;
+   }
+   .object.fern:hover{
+      background: url('../images/fern_active.png') 158px 135px;
+   }
+   .object.butterfly{
+      top: 242px;
+      right: 347px;
+   }
+   .object.butterfly:hover{
+      background: url('../images/butterfly_active.png') 160px 247px;
+   }
+   .object.books{
+      right: 370px;
+      bottom: 52px;
+   }
+   .object.books:hover{
+      background:url('../images/books_active.png') 570px 283px;
+   }
+   .object.piano{
+      bottom: 120px;
+      left: 527px;
+   }
+   .object.piano:hover{
+      background:url('../images/piano_active.png') -10px 120px;
+   }
+   .object.raspberries{
+      bottom: 144px;
+      left: 322px;
+   }
+   .object.raspberries:hover{
+      background:url('../images/raspberries_active.png') 306px 364px;
+   }
+   .object.bike{
+      bottom: 384px;
+      left: 330px;
+   }
+   .object.bike:hover{
+      background:url('../images/bike_active.png') 176px 106px;
+   }
+   .object.globe{
+      top: 149px;
+      left: 397px;
+   }
+   .object.globe:hover{
+      background:url('../images/globe_active.png') 114px 165px;
+   }
+   .object.telescope{
+      top: 93px;
+      left: 399px;
+   }
+   .object.telescope:hover{
+      background:url('../images/telescope_active.png') 88px 94px;
+   }
+   .object.home{
+      top: 0;
+      left: 439px;
+   }
+   .object.home:hover{
+      background: url('../images/home_active.png') 145% 30% no-repeat;
+   }
+   .object.flags{
+      top: 0;
+      left: 662px;
+   }
+   .object.flags:hover{
+      background: url('../images/flags_active.png') 128px 54px;
+   }
+/***************************************************
+Arrows
+***************************************************/
+   .arrow{
+      position: absolute;
+      cursor: pointer;
+      z-index: 2;
+   }
+   .arrow._swan{
+      top: 70px;
+      right: 410px;
+   }
+   .arrow._swan:hover ~ .object.swan{
+      background: url('../images/swan_active.png');
+   }
+   .arrow._fern{
+      top: 175px;
+      right: 325px;
+   }
+   .arrow._fern:hover ~ .object.fern{
+      background: url('../images/fern_active.png') 158px 135px;
+   }
+   .arrow._butterfly{
+      top: 300px;
+      right: 340px;
+   }
+   .arrow._butterfly:hover ~ .object.butterfly{
+      background: url('../images/butterfly_active.png') 160px 247px;
+   }
+   .arrow._books{
+      top: 515px;
+      right: 325px;
+   }
+   .arrow._books:hover ~ .object.books{
+      background:url('../images/books_active.png') 570px 283px;
+   }
+   .arrow._piano{
+      bottom: 145px;
+      left: 385px;
+   }
+   .arrow._piano:hover ~ .object.piano{
+      background:url('../images/piano_active.png') -10px 120px;
+   }
+   .arrow._raspberries{
+      bottom: 280px;
+      left: 320px;
+   }
+   .arrow._raspberries:hover ~ .object.raspberries{
+      background:url('../images/raspberries_active.png') 306px 364px;
+   }
+   .arrow._bike{
+      top: 255px;
+      left: 320px;
+   }
+   .arrow._bike:hover ~ .object.bike{
+      background:url('../images/bike_active.png') 176px 106px;
+   }
+   .arrow._globe{
+      top: 205px;
+      left: 345px;
+   }
+   .arrow._globe:hover ~ .object.globe{
+      background:url('../images/globe_active.png') 114px 165px;
+   }
+   .arrow._telescope{
+      top: 60px;
+      left: 430px;
+   }
+   .arrow._telescope:hover ~ .object.telescope{
+      background:url('../images/telescope_active.png') 88px 94px;
+   }
+   .arrow._home{
+      top: -5px;
+      left: 525px;
+   }
+   .arrow._home:hover ~ .object.home{
+      background: url('../images/home_active.png') 145% 30% no-repeat;
+   }
+   .arrow._flags{
+      top: -15px;
+      right: 550px;
+   }
+   .arrow._flags:hover ~ .object.flags{
+      background: url('../images/flags_active.png') 128px 54px;
+   }
 /***************************************************
 Footer
 /*****************************************************/
