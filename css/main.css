@@ -13,36 +13,36 @@ html,body{
 /***************************************************
 NAVIGATION
 ***************************************************/
-.navigation{
+nav{
    font-size: 16px;
    text-align: center;
    font-weight: 400;
    color: rgb(49,42,32);
 }
-   .navigation-item{
+   .nav-item{
       position: absolute;
       padding: 5px 10px;
       border: 1px solid #fff;
       letter-spacing: 0.8px;
       cursor: pointer;
    }
-   .navigation-item:hover{
+   .nav-item:hover{
       background: #fff;
    }
-      .navigation-item._town{
+      .nav-item._town{
          top: 240px;
          left: 130px;
       }
-      .navigation-item._summer{
+      .nav-item._summer{
          top: 300px;
          left: 130px;
       }
-      .navigation-item._contacts{
+      .nav-item._contacts{
          top: 240px;
          right: 120px;
          padding: 5px 22px;
       }
-      .navigation-item._dreams{
+      .nav-item._dreams{
          top: 300px;
          right: 120px;
       }
@@ -56,18 +56,59 @@ NAVIGATION
    height: 735px;
    margin: 30px auto 0px;
 }
-   .content-item{
+   .content-box{
       position: absolute;
-      z-index: 2;
       top: 175px;
       left: 165px;
+      z-index: 2;
       width: 386px;
       height: 386px;
       background: #fff;
+      color: rgb(134, 100, 70);
    }
-      .content-item__logo{
+      .content-item.__logo{
+         display: block;
          width: 200px;
          margin: 55px auto;
+      }
+      .content-button{
+         display: none;
+         position: absolute;
+         top: 28px;
+         left: 25px;
+         cursor: pointer;
+      }
+      .content-item{
+         display: none;
+         font-size: 33px;
+         text-transform: uppercase;
+         text-align: center;
+         margin: 135px auto;
+      }
+      .content-item.__piano{
+         font-size: 30px;
+      }
+      .content-description{
+         display: none;
+         width: 340px;
+         height: 320px;
+         margin: 25px auto 0;
+         color:  #423b30;
+         font-size: 16px;
+         font-weight: 400;
+         letter-spacing: 0.8px;
+         line-height: 27px;
+         text-align: justify;
+         overflow: hidden;
+      }
+      .content-description p{
+         margin-top: 37px;
+      }
+      .topic{
+         color: rgb(134, 100, 70);
+         text-transform: uppercase;
+         font-weight: 700;
+         float: right;
       }
 /***************************************************
 Objects
