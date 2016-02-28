@@ -386,27 +386,29 @@ Animation
       opacity: 1;
    }
    65%{
-      transform: translate(780px, 0);
+      transform: translate(750px, 0);
    }
    70%{
-      transform: translate(870px, -7px) rotate(5deg);
+      transform: translate(820px, -7px) rotate(5deg);
    }
    75%{
-      transform: translate(960px, -5px) rotate(2deg);
-   }rotate(5deg)
+      transform: translate(900px, -5px) rotate(2deg);
+   }
    80%{
-      transform: translate(1050px, -10px) rotate(-5deg);
+      transform: translate(980px, -10px) rotate(-5deg);
    }
    85%{
-      transform: translate(1140px, -5px);
+      transform: translate(1080px, -5px);
    }
    90%{
-      transform: translate(1250px, -5px);
+      transform: translate(1170px, -5px);
    }
-   95{
-      transform: translate(1340px, -5px);
+   95%{
+      transform: translate(1250px, -5px);
+      opacity: 0.9;
    }
    100%{
-      transform: translate(1430px, -5px);
+      transform: translate(1310px, -5px);
+      opacity: 0.35;
       }
 }

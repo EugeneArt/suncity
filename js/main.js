@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
    $(".objects").click(function(e){
       cleanContent();
       showButton();
@@ -80,7 +79,7 @@ $(document).ready(function(){
       $(".content-item.__logo").hide();
       $(".content-button").show();
    };
-   
+
    function cleanContent(){
       $(".content-item").hide();
       $(".content-description").hide();
