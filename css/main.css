@@ -4,11 +4,11 @@
 }
 
 html,body{
-   width: 1366px;
+   width: 100%;
+   min-width: 1280px;
    height: 768px;
 	position: relative;
 	margin: 0 auto;
-
 	background-color: #EBE4D2;
 	font-family: Calibri;
    color: #886547;
@@ -325,18 +325,25 @@ Arrows
 /***************************************************
 Footer
 /*****************************************************/
+footer{
+   overflow: hidden;
+   position: relative;
+   height: 150px;
+}
    .hedgehog{
       position: absolute;
       background: url('../images/hedgehog.png');
       width: 160px;
       height: 102px;
+      margin-top: 50px;
    }
    .grass__left{
       float:left;
-      margin-top: 8px;
+      margin-top: 62px;
    }
    .grass__right{
       float: right;
+      margin-top: 54px;
    }
 /***************************************************
 Animation
@@ -400,181 +407,37 @@ Animation
       opacity: 0;
       }
    55%{
-      transform: translate(600px, 100px);
+      transform: translate(560px, 100px);
       opacity: 0;
    }
    60%{
-      transform: translate(690px, 65px) rotate(-30deg);
+      transform: translate(640px, 65px) rotate(-30deg);
       opacity: 1;
    }
    65%{
-      transform: translate(750px, 0);
+      transform: translate(720px, 0);
    }
    70%{
-      transform: translate(820px, -7px) rotate(5deg);
+      transform: translate(800px, -7px) rotate(5deg);
    }
    75%{
-      transform: translate(900px, -5px) rotate(2deg);
+      transform: translate(880px, -5px) rotate(2deg);
    }
    80%{
-      transform: translate(980px, -10px) rotate(-5deg);
+      transform: translate(960px, -10px) rotate(-5deg);
    }
    85%{
-      transform: translate(1080px, -5px);
+      transform: translate(1040px, -5px);
    }
    90%{
-      transform: translate(1170px, -5px);
+      transform: translate(1120px, -5px);
    }
    95%{
-      transform: translate(1250px, -5px);
+      transform: translate(1200px, -5px);
       opacity: 0.9;
    }
    100%{
-      transform: translate(1310px, -5px);
-      opacity: 0.35;
-      }
-}
-
-@-moz-keyframes moving {
-   0%{
-      -moz-transform: translate(-60px, 0);
-     }
-   5%{
-      -moz-transform: translate(0,-5px) rotate(-5deg);
-      }
-   10%{
-      -moz-transform: translate(60px, -15px) rotate(-8deg);
-      }
-   15%{
-      -moz-transform: translate(120px, -20px) rotate(5deg);
-   }
-   20%{
-      -moz-transform: translate(180px, -5px) rotate(0deg);
-      }
-   25%{
-      -moz-transform: translate(240px, 0);
-      }
-   30%{
-      -moz-transform: translate(300px, 0) rotate(-1deg);
-      }
-   35%{
-      -moz-transform: translate(360px, -5px) rotate(-3deg);
-   }
-   40%{
-      -moz-transform: translate(420px,0px) rotate(10deg);
-      }
-   45%{
-      -moz-transform: translate(480px, 50px) rotate(30deg);
-      opacity: 0.8;
-   }
-   50%{
-      -moz-transform: translate(540px, 100px) rotate(35deg);
-      opacity: 0;
-      }
-   55%{
-      -moz-transform: translate(600px, 100px);
-      opacity: 0;
-   }
-   60%{
-      -moz-transform: translate(690px, 65px) rotate(-30deg);
-      opacity: 1;
-   }
-   65%{
-      -moz-transform: translate(750px, 0);
-   }
-   70%{
-      -moz-transform: translate(820px, -7px) rotate(5deg);
-   }
-   75%{
-      -moz-transform: translate(900px, -5px) rotate(2deg);
-   }
-   80%{
-      -moz-transform: translate(980px, -10px) rotate(-5deg);
-   }
-   85%{
-      -moz-transform: translate(1080px, -5px);
-   }
-   90%{
-      -moz-transform: translate(1170px, -5px);
-   }
-   95%{
-      -moz-transform: translate(1250px, -5px);
-      opacity: 0.9;
-   }
-   100%{
-      -moz-transform: translate(1310px, -5px);
-      opacity: 0.35;
-      }
-}
-
-@-webkit-keyframes moving {
-   0%{
-      -webkit-transform: translate(-60px, 0);
-     }
-   5%{
-      -webkit-transform: translate(0,-5px) rotate(-5deg);
-      }
-   10%{
-      -webkit-transform: translate(60px, -15px) rotate(-8deg);
-      }
-   15%{
-      -webkit-transform: translate(120px, -20px) rotate(5deg);
-   }
-   20%{
-      -webkit-transform: translate(180px, -5px) rotate(0deg);
-      }
-   25%{
-      -webkit-transform: translate(240px, 0);
-      }
-   30%{
-      -webkit-transform: translate(300px, 0) rotate(-1deg);
-      }
-   35%{
-      -webkit-transform: translate(360px, -5px) rotate(-3deg);
-   }
-   40%{
-      -webkit-transform: translate(420px,0px) rotate(10deg);
-      }
-   45%{
-      -webkit-transform: translate(480px, 50px) rotate(30deg);
-      opacity: 0.8;
-   }
-   50%{
-      -webkit-transform: translate(540px, 100px) rotate(35deg);
-      opacity: 0;
-      }
-   55%{
-      -webkit-transform: translate(600px, 100px);
-      opacity: 0;
-   }
-   60%{
-      -webkit-transform: translate(690px, 65px) rotate(-30deg);
-      opacity: 1;
-   }
-   65%{
-      -webkit-transform: translate(750px, 0);
-   }
-   70%{
-      -webkit-transform: translate(820px, -7px) rotate(5deg);
-   }
-   75%{
-      -webkit-transform: translate(900px, -5px) rotate(2deg);
-   }
-   80%{
-      -webkit-transform: translate(980px, -10px) rotate(-5deg);
-   }
-   85%{
-      -webkit-transform: translate(1080px, -5px);
-   }
-   90%{
-      -webkit-transform: translate(1170px, -5px);
-   }
-   95%{
-      -webkit-transform: translate(1250px, -5px);
-      opacity: 0.9;
-   }
-   100%{
-      -webkit-transform: translate(1310px, -5px);
+      transform: translate(1280px, -5px);
       opacity: 0.35;
       }
 }
