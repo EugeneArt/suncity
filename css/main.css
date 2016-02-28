@@ -115,6 +115,7 @@ Objects
 ***************************************************/
    .object{
       position: absolute;
+      cursor: pointer;
    }
    .object.swan{
       top: 25px;
@@ -204,6 +205,9 @@ Arrows
    .arrow._swan{
       top: 70px;
       right: 410px;
+      background: url('../images/arrow_swan.png');
+      width: 31px;
+      height: 6px;
    }
    .arrow._swan:hover ~ .object.swan{
       background: url('../images/swan_active.png');
@@ -211,6 +215,9 @@ Arrows
    .arrow._fern{
       top: 175px;
       right: 325px;
+      background: url('../images/arrow_fern.png');
+      width: 23px;
+      height: 21px;
    }
    .arrow._fern:hover ~ .object.fern{
       background: url('../images/fern_active.png') 158px 135px;
@@ -218,6 +225,9 @@ Arrows
    .arrow._butterfly{
       top: 300px;
       right: 340px;
+      background: url('../images/arrow_butterfly.png');
+      width: 38px;
+      height: 13px;
    }
    .arrow._butterfly:hover ~ .object.butterfly{
       background: url('../images/butterfly_active.png') 160px 247px;
@@ -225,6 +235,9 @@ Arrows
    .arrow._books{
       top: 515px;
       right: 325px;
+      background: url('../images/arrow_books.png');
+      width: 32px;
+      height: 21px;
    }
    .arrow._books:hover ~ .object.books{
       background:url('../images/books_active.png') 570px 283px;
@@ -232,6 +245,9 @@ Arrows
    .arrow._piano{
       bottom: 145px;
       left: 385px;
+      background: url('../images/arrow_piano.png');
+      width: 29px;
+      height: 13px;
    }
    .arrow._piano:hover ~ .object.piano{
       background:url('../images/piano_active.png') -10px 120px;
@@ -239,6 +255,9 @@ Arrows
    .arrow._raspberries{
       bottom: 280px;
       left: 320px;
+      background: url('../images/arrow_raspberries.png');
+      width: 28px;
+      height: 31px;
    }
    .arrow._raspberries:hover ~ .object.raspberries{
       background:url('../images/raspberries_active.png') 306px 364px;
@@ -246,6 +265,9 @@ Arrows
    .arrow._bike{
       top: 255px;
       left: 320px;
+      background: url('../images/arrow_bike.png');
+      width: 7px;
+      height: 31px;
    }
    .arrow._bike:hover ~ .object.bike{
       background:url('../images/bike_active.png') 176px 106px;
@@ -253,6 +275,9 @@ Arrows
    .arrow._globe{
       top: 205px;
       left: 345px;
+      background: url('../images/arrow_globe.png');
+      width: 28px;
+      height: 13px;
    }
    .arrow._globe:hover ~ .object.globe{
       background:url('../images/globe_active.png') 114px 165px;
@@ -260,6 +285,9 @@ Arrows
    .arrow._telescope{
       top: 60px;
       left: 430px;
+      background: url('../images/arrow_telescope.png');
+      width: 23px;
+      height: 19px;
    }
    .arrow._telescope:hover ~ .object.telescope{
       background:url('../images/telescope_active.png') 88px 94px;
@@ -267,6 +295,9 @@ Arrows
    .arrow._home{
       top: -5px;
       left: 525px;
+      background: url('../images/arrow_home.png');
+      width: 28px;
+      height: 8px;
    }
    .arrow._home:hover ~ .object.home{
       background: url('../images/home_active.png') 145% 30% no-repeat;
@@ -274,6 +305,9 @@ Arrows
    .arrow._flags{
       top: -15px;
       right: 550px;
+      background: url('../images/arrow_flags.png');
+      width: 29px;
+      height: 18px;
    }
    .arrow._flags:hover ~ .object.flags{
       background: url('../images/flags_active.png') 128px 54px;
