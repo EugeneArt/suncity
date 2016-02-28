@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
    $(".objects").click(function(e){
+      cleanContent();
       showButton();
       switch (event.target.className) {
          case 'clickSwan':
@@ -51,8 +52,8 @@ $(document).ready(function(){
    });
 
    $("nav").click(function(e){
+      cleanContent();
       showButton();
-      console.log(event.target.className);
       switch(event.target.className){
          case 'nav-item _town':
             $(".content-description.__town").toggle();
@@ -69,9 +70,18 @@ $(document).ready(function(){
       }
    });
 
+   $(".content-button").click(function(){
+      cleanContent();
+      $(".content-item.__logo").show();
+      $(this).hide();
+   });
+
    function showButton(){
       $(".content-item.__logo").hide();
       $(".content-button").show();
+   };
+   function cleanContent(){
+      $(".content-item").hide();
+      $(".content-description").hide();
    }
-
 });

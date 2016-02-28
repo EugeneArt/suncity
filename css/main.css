@@ -76,6 +76,9 @@ nav{
          position: absolute;
          top: 28px;
          left: 25px;
+         background: url('../images/button.png');
+         width: 23px;
+         height: 21px;
          cursor: pointer;
       }
       .content-item{
