@@ -438,10 +438,13 @@ Animation
 
 @keyframes moving {
    0%{
+      transform: translate(-70%, 0);
+      }
+   5%{
       transform: translate(0, 0);
-     }
+   }
    10%{
-      transform: translate(100%, 1px) rotate(-2deg);
+      transform: translate(70%, 1px) rotate(-2deg);
       }
    20%{
       transform: translate(200%, 8px) rotate(-8deg);
@@ -470,42 +473,42 @@ Animation
    100%{
       transform: translate(1000%, 0);
       opacity: 0.8;
-   }
+    }
 }
 @-webkit-keyframes moving {
    0%{
       -webkit-transform: translate(0, 0);
      }
    10%{
-      -webkit-transform: translate(100%, 0) rotate(-2deg);
+      -webkit-transform: translate(100%, 1px) rotate(-2deg);
       }
    20%{
-      -webkit-transform: translate(200%, 0) rotate(-4deg);
+      -webkit-transform: translate(200%, 8px) rotate(-8deg);
       }
    30%{
-      -webkit-transform: translate(300%, 5px) rotate(-3deg);
+      -webkit-transform: translate(300%, 13px) rotate(2deg);
       }
    40%{
-      -webkit-transform: translate(400%, 10px) rotate(-5deg);
+      -webkit-transform: translate(400%, 18px) rotate(6deg);
       }
    50%{
-      -webkit-transform: translate(500%, 5px) rotate(-2deg);
+      -webkit-transform: translate(500%, 5px) rotate(-1deg);
    }
    60%{
-      -webkit-transform: translate(600%, 2px);
+      -webkit-transform: translate(600%,6px) rotate(6deg);
    }
    70%{
-      -webkit-transform: translate(700%, 0) rotate(5deg);
+      -webkit-transform: translate(700%, 4px) rotate(3deg);
       }
    80%{
-      -webkit-transform: translate(800%, 0) rotate(-3deg);
+      -webkit-transform: translate(800%, 7px) rotate(-3deg);
       }
    90%{
-      -webkit-transform: translate(900%, 0);
+      -webkit-transform: translate(900%, 5px) rotate(8deg);
       }
    100%{
       -webkit-transform: translate(1000%, 0);
-      opacity: 0.9;
+      opacity: 0.8;
    }
 }
 @-moz-keyframes moving {
@@ -513,71 +516,34 @@ Animation
       -moz-transform: translate(0, 0);
      }
    10%{
-      -moz-transform: translate(100%, 0) rotate(-2deg);
+      -moz-transform: translate(100%, 1px) rotate(-2deg);
       }
    20%{
-      -moz-transform: translate(200%, 0) rotate(-4deg);
+      -moz-transform: translate(200%, 8px) rotate(-8deg);
       }
    30%{
-      -moz-transform: translate(300%, 5px) rotate(-3deg);
+      -moz-transform: translate(300%, 13px) rotate(2deg);
       }
    40%{
-      -moz-transform: translate(400%, 10px) rotate(-5deg);
+      -moz-transform: translate(400%, 18px) rotate(6deg);
       }
    50%{
-      -moz-transform: translate(500%, 5px) rotate(-2deg);
+      -moz-transform: translate(500%, 5px) rotate(-1deg);
    }
    60%{
-      -moz-transform: translate(600%, 2px);
+      -moz-transform: translate(600%,6px) rotate(6deg);
    }
    70%{
-      -moz-transform: translate(700%, 0) rotate(5deg);
+      -moz-transform: translate(700%, 4px) rotate(3deg);
       }
    80%{
-      -moz-transform: translate(800%, 0) rotate(-3deg);
+      -moz-transform: translate(800%, 7px) rotate(-3deg);
       }
    90%{
-      -moz-transform: translate(900%, 0);
+      -moz-transform: translate(900%, 5px) rotate(8deg);
       }
    100%{
       -moz-transform: translate(1000%, 0);
-      opacity: 0.9;
-   }
-}
-
-@-ms-keyframes moving {
-   0%{
-      -ms-transform: translate(0, 0);
-     }
-   10%{
-      -ms-transform: translate(100%, 0) rotate(-2deg);
-      }
-   20%{
-      -ms-transform: translate(200%, 0) rotate(-4deg);
-      }
-   30%{
-      -ms-transform: translate(300%, 5px) rotate(-3deg);
-      }
-   40%{
-      -ms-transform: translate(400%, 10px) rotate(-5deg);
-      }
-   50%{
-      -ms-transform: translate(500%, 5px) rotate(-2deg);
-   }
-   60%{
-      -ms-transform: translate(600%, 2px);
-   }
-   70%{
-      -ms-transform: translate(700%, 0) rotate(5deg);
-      }
-   80%{
-      -ms-transform: translate(800%, 0) rotate(-3deg);
-      }
-   90%{
-      -ms-transform: translate(900%, 0);
-      }
-   100%{
-      -ms-transform: translate(1000%, 0);
-      opacity: 0.9;
+      opacity: 0.8;
    }
 }
