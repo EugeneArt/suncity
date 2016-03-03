@@ -39,10 +39,10 @@ nav{
          left: 200px;
          padding: 5px 23px;
       }
-      .nav-item._summer{
+      .nav-item._spring{
          top: 400px;
          left: 200px;
-         padding: 5px 24px;
+         padding: 5px 21px;
       }
       .nav-item._contacts{
          top: 300px;
@@ -58,7 +58,7 @@ nav{
       .nav-item._town{
          left: 40px;
       }
-      .nav-item._summer{
+      .nav-item._spring{
          left: 40px;
       }
       .nav-item._contacts{
@@ -73,7 +73,7 @@ nav{
          left: 120px;
          top: 25%;
       }
-      .nav-item._summer{
+      .nav-item._spring{
          left: 120px;
          top: 70%;
       }
@@ -91,7 +91,7 @@ nav{
          left: 10%;
          top: 10%;
       }
-      .nav-item._summer{
+      .nav-item._spring{
          left: 10%;
          top: 83%;
       }
@@ -110,7 +110,6 @@ nav{
 .content{
    width: 723px;
    height: 715px;
-   /*background: url("../images/objects.png");*/
 }
    .content-box{
       position: absolute;
@@ -121,10 +120,18 @@ nav{
       height: 386px;
       background: #fff;
       color: rgb(134, 100, 70);
+      outline: 4px solid rgb(232,227,210);
+      outline-offset: -10px;
    }
       .content-item.__logo{
          display: block;
-         width: 200px;
+         width: 386px;
+         height: 386px;
+         position: absolute;
+         background-color: #fff;
+         margin: 0 auto;
+      }
+      .content-item.__logo img{
          margin: 55px auto;
       }
       .content-button{
@@ -151,19 +158,23 @@ nav{
          display: none;
          width: 340px;
          height: 320px;
-         margin: 25px auto 0;
+         margin: 30px auto 0;
          color:  #423b30;
          font-size: 16px;
          font-weight: 400;
+
+      }
+      .content-description p{
+         width: 340px;
+         height: 300px;
+         overflow: auto;
          letter-spacing: 0.8px;
          line-height: 27px;
          text-align: justify;
-         overflow: hidden;
-      }
-      .content-description p{
-         margin-top: 37px;
+         padding-right: 10px;
       }
       .topic{
+         margin: 0 15px 15px;
          color: rgb(134, 100, 70);
          text-transform: uppercase;
          font-weight: 700;
@@ -415,135 +426,116 @@ footer{
 Animation
 /*****************************************************/
 .hedgehog{
-   animation-name: moving;
-   animation-duration: 30s;
-   animation-timing-function: linear;
-   animation-iteration-count: infinite;
-
-   -moz-animation-name: moving;
-   -moz-animation-duration: 30s;
-   -moz-animation-timing-function: linear;
-   -moz-animation-iteration-count: infinite;
-
    -webkit-animation-name: moving;
+           animation-name: moving;
    -webkit-animation-duration: 30s;
+           animation-duration: 30s;
    -webkit-animation-timing-function: linear;
+           animation-timing-function: linear;
    -webkit-animation-iteration-count: infinite;
+           animation-iteration-count: infinite;
+}
 
-   -ms-animation-name: moving;
-   -ms-animation-duration: 30s;
-   -ms-animation-timing-function: linear;
-   -ms-animation-iteration-count: infinite;
+@-webkit-keyframes moving {
+   0%{
+      -webkit-transform: translate(-70%, 0);
+              transform: translate(-70%, 0);
+      }
+   5%{
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+   }
+   10%{
+      -webkit-transform: translate(70%, 1px) rotate(-2deg);
+              transform: translate(70%, 1px) rotate(-2deg);
+      }
+   20%{
+      -webkit-transform: translate(200%, 8px) rotate(-8deg);
+              transform: translate(200%, 8px) rotate(-8deg);
+      }
+   30%{
+      -webkit-transform: translate(300%, 13px) rotate(2deg);
+              transform: translate(300%, 13px) rotate(2deg);
+      }
+   40%{
+      -webkit-transform: translate(400%, 18px) rotate(6deg);
+              transform: translate(400%, 18px) rotate(6deg);
+      }
+   50%{
+      -webkit-transform: translate(500%, 5px) rotate(-1deg);
+              transform: translate(500%, 5px) rotate(-1deg);
+   }
+   60%{
+      -webkit-transform: translate(600%,6px) rotate(6deg);
+              transform: translate(600%,6px) rotate(6deg);
+   }
+   70%{
+      -webkit-transform: translate(700%, 4px) rotate(3deg);
+              transform: translate(700%, 4px) rotate(3deg);
+      }
+   80%{
+      -webkit-transform: translate(800%, 7px) rotate(-3deg);
+              transform: translate(800%, 7px) rotate(-3deg);
+      }
+   90%{
+      -webkit-transform: translate(900%, 5px) rotate(8deg);
+              transform: translate(900%, 5px) rotate(8deg);
+      }
+   100%{
+      -webkit-transform: translate(1000%, 0);
+              transform: translate(1000%, 0);
+      opacity: 0.8;
+    }
 }
 
 @keyframes moving {
    0%{
-      transform: translate(-70%, 0);
+      -webkit-transform: translate(-70%, 0);
+              transform: translate(-70%, 0);
       }
    5%{
-      transform: translate(0, 0);
-   }
-   10%{
-      transform: translate(70%, 1px) rotate(-2deg);
-      }
-   20%{
-      transform: translate(200%, 8px) rotate(-8deg);
-      }
-   30%{
-      transform: translate(300%, 13px) rotate(2deg);
-      }
-   40%{
-      transform: translate(400%, 18px) rotate(6deg);
-      }
-   50%{
-      transform: translate(500%, 5px) rotate(-1deg);
-   }
-   60%{
-      transform: translate(600%,6px) rotate(6deg);
-   }
-   70%{
-      transform: translate(700%, 4px) rotate(3deg);
-      }
-   80%{
-      transform: translate(800%, 7px) rotate(-3deg);
-      }
-   90%{
-      transform: translate(900%, 5px) rotate(8deg);
-      }
-   100%{
-      transform: translate(1000%, 0);
-      opacity: 0.8;
-    }
-}
-@-webkit-keyframes moving {
-   0%{
       -webkit-transform: translate(0, 0);
-     }
+              transform: translate(0, 0);
+   }
    10%{
-      -webkit-transform: translate(100%, 1px) rotate(-2deg);
+      -webkit-transform: translate(70%, 1px) rotate(-2deg);
+              transform: translate(70%, 1px) rotate(-2deg);
       }
    20%{
       -webkit-transform: translate(200%, 8px) rotate(-8deg);
+              transform: translate(200%, 8px) rotate(-8deg);
       }
    30%{
       -webkit-transform: translate(300%, 13px) rotate(2deg);
+              transform: translate(300%, 13px) rotate(2deg);
       }
    40%{
       -webkit-transform: translate(400%, 18px) rotate(6deg);
+              transform: translate(400%, 18px) rotate(6deg);
       }
    50%{
       -webkit-transform: translate(500%, 5px) rotate(-1deg);
+              transform: translate(500%, 5px) rotate(-1deg);
    }
    60%{
       -webkit-transform: translate(600%,6px) rotate(6deg);
+              transform: translate(600%,6px) rotate(6deg);
    }
    70%{
       -webkit-transform: translate(700%, 4px) rotate(3deg);
+              transform: translate(700%, 4px) rotate(3deg);
       }
    80%{
       -webkit-transform: translate(800%, 7px) rotate(-3deg);
+              transform: translate(800%, 7px) rotate(-3deg);
       }
    90%{
       -webkit-transform: translate(900%, 5px) rotate(8deg);
+              transform: translate(900%, 5px) rotate(8deg);
       }
    100%{
       -webkit-transform: translate(1000%, 0);
+              transform: translate(1000%, 0);
       opacity: 0.8;
-   }
-}
-@-moz-keyframes moving {
-   0%{
-      -moz-transform: translate(0, 0);
-     }
-   10%{
-      -moz-transform: translate(100%, 1px) rotate(-2deg);
-      }
-   20%{
-      -moz-transform: translate(200%, 8px) rotate(-8deg);
-      }
-   30%{
-      -moz-transform: translate(300%, 13px) rotate(2deg);
-      }
-   40%{
-      -moz-transform: translate(400%, 18px) rotate(6deg);
-      }
-   50%{
-      -moz-transform: translate(500%, 5px) rotate(-1deg);
-   }
-   60%{
-      -moz-transform: translate(600%,6px) rotate(6deg);
-   }
-   70%{
-      -moz-transform: translate(700%, 4px) rotate(3deg);
-      }
-   80%{
-      -moz-transform: translate(800%, 7px) rotate(-3deg);
-      }
-   90%{
-      -moz-transform: translate(900%, 5px) rotate(8deg);
-      }
-   100%{
-      -moz-transform: translate(1000%, 0);
-      opacity: 0.8;
-   }
+    }
 }

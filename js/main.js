@@ -57,8 +57,8 @@ $(document).ready(function(){
          case 'nav-item _town':
             $(".content-description.__town").toggle();
          break;
-         case 'nav-item _summer':
-            $(".content-description.__summer").toggle();
+         case 'nav-item _spring':
+            $(".content-description.__spring").toggle();
          break;
          case 'nav-item _contacts':
             $(".content-description.__contacts").toggle();
