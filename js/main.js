@@ -63,8 +63,8 @@ $(document).ready(function(){
          case 'nav-item _contacts':
             $(".content-description.__contacts").toggle();
          break;
-         case 'nav-item _dreams':
-            $(".content-description.__dreams").toggle();
+         case 'nav-item _summer':
+            $(".content-description.__summer").toggle();
          break;
       }
    });
