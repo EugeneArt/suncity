@@ -32,7 +32,10 @@ SCROLL
 
 ::-webkit-scrollbar-thumb {
     border-radius: 15px;
-    background: rgba(134, 100, 70, 0.75);
+    background: rgba(134, 100, 70, 0.40);
+}
+::-webkit-resizer {
+   height: 5px;
 }
 /***************************************************
 NAVIGATION
@@ -153,7 +156,7 @@ nav{
          top: 28px;
          left: 25px;
          font-size: 23px;
-         color: rgba(134, 100, 70, 0.75);
+         color: rgba(134, 100, 70, 0.40);
          /*background: url('../images/button.png');*/
          /*width: 23px;
          height: 21px;*/
@@ -194,8 +197,15 @@ nav{
       .content-description__text span{
          font-weight: 700;
       }
-      .content-description__text._center{
-         text-align: center;
+      .content-description__text ul{
+         margin: 0 0 25px;
+         padding: 0;
+      }
+      .content-description__text li{
+         list-style: none;
+      }
+      .content-description__text li:before{
+         content: " - ";
       }
       .topic{
          margin: 0 5px 15px;
