@@ -191,6 +191,10 @@ nav{
          padding-right: 10px;
          overflow: auto;
       }
+      .content-description__text h4{
+         margin: 0;
+         padding-left: 25px;
+      }
       .content-description__text p{
          text-indent: 1.5em;
          margin: 0;
